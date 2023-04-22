@@ -1,0 +1,256 @@
+body {
+font-family: "Lato", sans-serif;
+background-color: #121212;
+color: #FFFFFF;
+margin: 0;
+padding: 0;
+}
+
+.topnav header{
+background-color: #2e2e2e;
+color: #FFFFFF;
+padding: 2% 2%;
+}
+
+.logoname{
+color: #FFFFFF;
+text-decoration: none;
+margin: 0;
+padding: 0;
+}
+
+h1{
+padding: 0;
+margin: 0;
+padding-top: 1%;
+}
+
+.logoname:hover{
+color: #03DAC6;
+}
+
+.logo{
+height: 6%;
+width: 6%;
+filter: invert();
+}
+
+.sidebar {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 5;
+top: 0;
+right: 0;
+background-color: #1F1B24;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+.sidebar a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #ffffff;
+display: block;
+transition: 0.3s;
+border: none;
+}
+
+.sidebar a:hover {
+color: #03DAC6;
+}
+
+.sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+
+}
+
+.openbtn {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 50px;
+cursor: pointer;
+background-color: transparent;
+color: #ffffff;
+padding: 10px 15px;
+border: none;
+float: right;
+overflow: visible;
+}
+
+.openbtn:hover {
+background-color: transparent;
+color: #03DAC6;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+	.sidebar {padding-top: 15px;}
+	.sidebar a {font-size: 18px;}
+}
+
+.grid-container {
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+.form_box {
+	/* position: absolute; */
+	width: 400px;
+	height: 450px;
+	border-radius: 10px;
+	position: relative;
+	margin: auto;
+	background: #1d1d1d;
+	padding: 5px;
+}
+
+/* image in form box */
+img {
+	vertical-align: middle;
+	border-radius: 10px;
+	height: auto;
+}
+.no-background { 
+	background-image: none;
+}
+
+.overlay {
+	position: absolute;
+	width: auto;
+	height: auto;
+	border-radius: 10px;
+	margin: 6% auto;
+	z-index: 1;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: 0.3s ease;
+	background-color: #383838;
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.text {
+  color: #fff;
+  font-size: 90%;
+  position: absolute;
+  /* top: 50%;
+  left: 50%; 
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  text-align: left;
+  opacity: 1;
+  margin: 1%;
+  padding: 1%;
+}
+/* .container_iteam{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+} */
+.grid-container {
+	display: grid;
+	grid-template-columns: auto auto auto;
+	gap: 20px;
+	padding: 20px;
+	justify-items: center;
+}
+  
+.grid-container > div {
+	text-align: center;
+	padding: 10px 0;
+	font-size: 15px;
+}
+.my-button{
+	background-color: #bb86fc;
+	border: none;
+	font-size: 1.1rem;
+	border-radius: .5rem;
+	cursor: pointer;
+	width: 200px;
+	height: 45px;
+	overflow: hidden; 
+	position: relative;
+	outline: none;
+	z-index: 2;
+}
+button:hover{
+	background-color: #03DAC6;
+}
+i {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+span {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	transform: translate(-50%, -50%);
+	transition: 500ms ease-in-out transform;
+}
+.added-to-cart {
+	transform: translate(-50%, -200%);
+	transition-delay: 1800ms;
+}
+.fa-shopping-cart {
+	transform: translate(-800%, -50%);
+	animation-delay: 200ms;
+}
+.fa-shopping-bag {
+	transform: translate(-50%, -400%);
+	font-size: .5rem;
+}
+
+.add-to-cart-animation {
+	transform: translate(-50%, -50%) scale(0);
+}
+.added-to-cart-animation {
+	transform: translate(-50%, -50%);
+}
+
+@keyframes cart {
+	0% { transform: translate(-800%, -50%); }
+	30% { transform: translate(-50%, -50%); }
+	70% { transform: translate(-50%, -50%); }
+	100% { transform: translate(105px, -50%); }
+}
+
+@keyframes bag {
+	0% {
+		transform: translate(-50%, -400%);
+		opacity: 1;
+	}
+	20% {
+		transform: translate(-50%, -90%);
+		opacity: 1;
+	}
+	50% {
+		transform: translate(-50%, -90%);
+		opacity: 0;
+	}
+	100% {
+		transform: translate(-50%, -90%);
+		opacity: 0;
+	}
+}

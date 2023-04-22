@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+  <title>Contact Us Page</title>
+  <link rel="stylesheet" type="text/css" href="Contact.css">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://kit.fontawesome.com/e398100a6b.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="topnav">
+  <header>
+    <a href="index.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/5882/5882215.png"></a>
+    <a class="logoname" href="index.html"><h1>TechTrove</h1></a>
+</header>
+</div>
+<div id="mySidebar" class="sidebar">
+<button class="openbtn" onclick="openNav()">
+    <ion-icon name="menu"></ion-icon>
+</button>
+<a href="NewPcParts.html">New Pc Parts</a>
+<a href="UsedPcParts.html">Used Pc Parts</a>
+<a href="404.html">Cart</a>
+<a href="Contact.html">Contact</a>
+<a href="404.html">About</a>
+<a href="Login.html">Login</a>
+</div>
+<body>
+
+<section class="contact">
+<div class="content">
+<h2>Contact Us</h2>
+</div>
+<div class="container">
+<div class="contactInfo">
+<div class="box">
+    <div class="icon">
+        <i class="fa fa-map-marker" aria-hidden="true"></i>
+    </div>
+    <div class="text">
+        <h3>Address</h3>
+        <p>San Fernando, Trinidad and Tobago </p>
+    </div>
+</div>
+<div class="box">
+    <div class="icon">
+        <i class="fa fa-phone" aria-hidden="true"></i>
+    </div>
+    <div class="text">
+        <h3>Phone</h3>
+        <p>1-868-479-5244</p>
+    </div>
+</div>
+<div class="box">
+    <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+    </div>
+    <div class="text">
+        <h3>Email</h3>
+        <p> techtrovett@gmail.com</p>
+    </div>
+</div>
+</div>
+<div class="contactForm">
+<form>
+    <h2>Send Message</h2>
+    <div class="inputBox">
+        <input type="text" name="" required="required">
+        <span>Full Name</span>
+    </div>
+    <div class="inputBox">
+        <input type="text" name="" required="required">
+        <span>Email</span>
+    </div>
+    <div class="inputBox">
+        <textarea required="required"></textarea>
+        <span>Type your message...</span>
+    </div>
+    <div class="inputBox">
+        <input type="submit" name="" value="Send">
+    </div>
+</form>
+</div>
+</div>
+</section>
+<div id="main">
+    <button class="openbtn" onclick="openNav()">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+</div>
+<footer>
+    <img class="logofoot" src="motherboard.png" height="60px" width="60px">
+    <br>
+    TechTrove inc.
+    <br>
+    <br>
+    <span class="social">
+    <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+    </span>
+    <span class="social">
+    <i class="fa fa-twitter" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+    </span>
+    <span class="social">
+    <i class="fa fa-facebook" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+    </span>
+    <span class="social">
+    <i class="fa fa-linkedin" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+    </span>
+    <span class="social">
+    <i class="fa fa-github" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+    </span>
+    <br>
+    <br>
+    <a href="404.html">About</a>&nbsp;
+    <a href="404.html">Contacts</a>&nbsp;
+    <a href="404.html">Terms of Service</a>&nbsp;
+    <a href="404.html">Privacy policy</a>
+    <br>
+    &copy;2023TechTrove
+    <br>
+  </footer>
+<script>
+function openNav() {
+if (document.getElementById("mySidebar").style.width == "250px") {
+    closeNav();
+} else {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+}
+}
+
+function closeNav() {
+document.getElementById("mySidebar").style.width = "0";
+document.getElementById("main").style.marginRight= "0";
+}
+</script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+</html>

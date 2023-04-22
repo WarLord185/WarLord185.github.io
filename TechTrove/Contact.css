@@ -1,0 +1,266 @@
+body {
+font-family: "Lato", sans-serif;
+background-color: #121212;
+color: #FFFFFF;
+margin: 0;
+padding: 0;
+}
+
+.topnav header{
+background-color: #2e2e2e;
+color: #FFFFFF;
+padding: 2% 2%;
+}
+
+.logoname{
+color: #FFFFFF;
+text-decoration: none;
+margin: 0;
+padding: 0;
+}
+
+h1{
+padding: 0;
+margin: 0;
+padding-top: 1%;
+}
+
+.logoname:hover{
+color: #03DAC6;
+}
+
+.logo{
+height: 6%;
+width: 6%;
+filter: invert();
+}
+
+.sidebar {
+height: 100%;
+width: 0;
+position: fixed;
+z-index: 5;
+top: 0;
+right: 0;
+background-color: #1F1B24;
+overflow-x: hidden;
+transition: 0.5s;
+padding-top: 60px;
+}
+
+.sidebar a {
+padding: 8px 8px 8px 32px;
+text-decoration: none;
+font-size: 25px;
+color: #ffffff;
+display: block;
+transition: 0.3s;
+border: none;
+}
+
+.sidebar a:hover {
+color: #03DAC6;
+}
+
+.sidebar .closebtn {
+position: absolute;
+top: 0;
+right: 25px;
+font-size: 36px;
+margin-left: 50px;
+
+}
+
+.openbtn {
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 50px;
+cursor: pointer;
+background-color: transparent;
+color: #ffffff;
+padding: 10px 15px;
+border: none;
+float: right;
+}
+
+.openbtn:hover {
+background-color: transparent;
+color: #03DAC6;
+}
+
+#main {
+transition: margin-left .5s;
+padding: 16px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+.sidebar {padding-top: 15px;}
+.sidebar a {font-size: 18px;}
+}
+.contact{
+    position: relative;
+    min-height: 100vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contact .content
+{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2
+{
+    font-size: 36px;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+.contact .content p
+{
+    font-weight:300;
+    color:#FFFFFF;
+}
+.container
+{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.container .contactInfo
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.container .contactInfo .box 
+{
+    position: relative;
+    padding: 3px 0;
+    display: flex;
+    
+}
+.container .contactInfo .box .icon
+{
+    min-width: 60px;
+    height: 60px;
+	color: #03DAC6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 22px;
+}
+.container .contactInfo .box .text
+{
+    display: flex;
+    margin-left: 20px;
+    font-size: 16px;
+    flex-direction: column;
+    font-weight: 300;
+}
+.container.contactInfo .box .text
+{
+    font-weight: 500;
+    color: #03DAC6;
+    
+}
+.contactForm
+{
+    width: 30%;
+    padding: 40px;
+    background-color: #FFFFFF;
+
+    
+}
+.contactForm h2
+{
+    font-size: 30px;
+    color: #03DAC6;
+    font-weight: 500;
+}
+.contactForm .inputBox
+{
+    position: relative;
+    width: 100%;
+    margin-top: 12px;
+    background-color: #FFFFFF;
+}
+.contactForm .inputBox input,
+.contactForm .inputBox textarea
+{
+    width: 100%;
+    padding: 4px 0;
+    font-size: 13px;
+    margin: 8px 0;
+    border: none;
+    border-bottom: 2px solid #666;
+    outline: none;
+    resize: none;
+    background-color: #FFFFFF;
+    
+}
+.contactForm .inputBox span
+{
+    position:absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    max-width: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: #666;
+}
+.contactForm .inputBox input:focus ~ span,
+.contactForm .inputBox input:valid ~ span,
+.contactForm .inputBox textarea:focus ~ span,
+.contactForm .inputBox textarea:valid ~ span
+{
+    color:#666;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+.contactForm .inputBox input[type="submit"]
+{
+    width: 100px;
+    background: #03DAC6;
+    color: #FFFFFF;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+    font-size: 18px;
+}
+footer{
+	font-family: "Lato", sans-serif;
+	background-color: #2c2c2c;
+	color: #FFFFFF;
+	margin: 0;
+	padding-left: 25px;
+	padding-bottom: 20px;
+}
+footer a:hover{
+	color: #03DAC6;
+}
+footer a{
+	color: #bb86fc;
+}
+.social{
+	height: 36px;
+	width: auto;
+	color: #FFFFFF;
+}
+.social:hover{
+	animation-name: bounce;
+	color:#03DAC6;
+}
+.logofoot{
+	height: 3%;
+	width: 3%;
+	filter: invert();
+	padding-top: 20px;
+}

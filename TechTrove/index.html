@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+  <title>TechTrove</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+<div class="topnav">
+  <header>
+    <a href="index.html"><img class="logo" src="https://cdn-icons-png.flaticon.com/512/5882/5882215.png"></a>
+    <a class="logoname" href="index.html"><h1>TechTrove</h1></a>
+</header>
+</div>
+  <div id="mySidebar" class="sidebar">
+    <button class="openbtn" onclick="openNav()">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+    <a href="NewPcParts.html">New Pc Parts</a>
+    <a href="UsedPcParts.html">Used Pc Parts</a>
+    <a href="404.html">Cart</a>
+    <a href="Contact.html">Contact</a>
+    <a href="404.html">About</a>
+    <a href="Login.html">Login</a>
+  </div>
+
+<div id="main">
+    <button class="openbtn" onclick="openNav()">
+        <ion-icon name="menu"></ion-icon>
+    </button>
+</div>
+
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="AMD Ryzen 5 5600X 6-core.jpg" class="center">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="MSI GeForce RTX 3060 Ventus 2X 12G.jpg" class="center">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="MSI Gaming GeForce RTX 4070 Ti 12GB.jpg" class="center">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Corsair HX1200 Platinum 1200 W 80+ Platinum Certified Fully Modular ATX.jpg" class="center">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Corsair iCUE 4000X RGB ATX Mid Tower.jpg" class="center">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Corsair iCUE H150i ELITE CAPELLIX 75 CFM.png" class="center">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)"></a>
+  <a class="next" onclick="plusSlides(1)"></a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="AMD Ryzen 5 5600X 6-core.jpg" style="width:100%" onclick="currentSlide(1)" alt="AMD Ryzen 5 5600X 6-core">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="MSI GeForce RTX 3060 Ventus 2X 12G.jpg" style="width:100%" onclick="currentSlide(2)" alt="MSI GeForce RTX 3060 Ventus 2X 12G">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="MSI Gaming GeForce RTX 4070 Ti 12GB.jpg" style="width:100%" onclick="currentSlide(3)" alt="MSI Gaming GeForce RTX 4070 Ti 12GB">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Corsair HX1200 Platinum 1200 W 80+ Platinum Certified Fully Modular ATX.jpg" style="width:100%" onclick="currentSlide(4)" alt="Corsair HX1200 Platinum 1200 W 80+ Platinum Certified Fully Modular ATX">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="Corsair iCUE 4000X RGB ATX Mid Tower.jpg" style="width:100%" onclick="currentSlide(5)" alt="Corsair iCUE 4000X RGB ATX Mid Tower">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="Corsair iCUE H150i ELITE CAPELLIX 75 CFM.png" style="width:100%" onclick="currentSlide(6)" alt="Corsair iCUE H150i ELITE CAPELLIX 75 CFM">
+    </div>
+  </div>
+</div>
+<br>
+<br>
+<div class="grid-container">
+  <div class="item-post">
+    <img src="AMD Ryzen 5 5600X 6-core.jpg" alt="AMD Ryzen 5 5600X 6-core">
+    <h2>AMD Ryzen 5 5600X 6-core</h2>
+    <p>$1,224.93</p>
+    <div class="cartcontainer">
+      <br>
+      <button class="cart-button my-button">
+        <span class="add-to-cart">Add To Cart</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-bag"></i>
+        <span class="added-to-cart">Added To Cart</span>
+      </button>
+    </div>
+  </div>
+  <div class="item-post">
+    <img src="Corsair HX1200 Platinum 1200 W 80+ Platinum Certified Fully Modular ATX.jpg" alt="Corsair HX1200 Platinum 1200 W 80+ Platinum Certified Fully Modular ATX">
+    <h2>Corsair HX1200 Platinum 1200 W 80+ Platinum Certified Fully Modular ATX</h2>
+    <p>$1,930.53</p>
+    <div class="cartcontainer">
+      <br>
+      <button class="cart-button my-button">
+        <span class="add-to-cart">Add To Cart</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-bag"></i>
+        <span class="added-to-cart">Added To Cart</span>
+      </button>
+    </div>
+  </div>
+  <div class="item-post">
+    <img src="Corsair iCUE 4000X RGB ATX Mid Tower.jpg" alt="Corsair iCUE 4000X RGB ATX Mid Tower">
+    <h2>Corsair iCUE 4000X RGB ATX Mid Tower</h2>
+    <p>$1,014.93</p>
+    <div class="cartcontainer">
+      <br>
+      <button class="cart-button my-button">
+        <span class="add-to-cart">Add To Cart</span>
+        <i class="fas fa-shopping-cart"></i>
+        <i class="fas fa-shopping-bag"></i>
+        <span class="added-to-cart">Added To Cart</span>
+      </button>
+    </div>
+  </div>
+</div>
+<footer>
+  <img class="logofoot" src="motherboard.png" height="60px" width="60px">
+  <br>
+  TechTrove inc.
+  <br>
+  <br>
+  <span class="social">
+  <i class="fa fa-instagram" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="social">
+  <i class="fa fa-twitter" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="social">
+  <i class="fa fa-facebook" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="social">
+  <i class="fa fa-linkedin" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+  </span>
+  <span class="social">
+  <i class="fa fa-github" style="font-size:36px"></i>&nbsp;&nbsp;&nbsp;
+  </span>
+  <br>
+  <br>
+  <a href="404.html">About</a>&nbsp;
+  <a href="404.html">Contacts</a>&nbsp;
+  <a href="404.html">Terms of Service</a>&nbsp;
+  <a href="404.html">Privacy policy</a>
+  <br>
+  &copy;2023TechTrove
+  <br>
+</footer>
+
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<script>
+  function openNav() {
+  if (document.getElementById("mySidebar").style.width == "250px") {
+    closeNav();
+  } else {
+    document.getElementById("mySidebar").style.width = "250px";
+    document.getElementById("main").style.marginRight = "250px";
+  }
+}
+
+function closeNav() {
+  document.getElementById("mySidebar").style.width = "0";
+  document.getElementById("main").style.marginRight= "0";
+}
+
+  let slideIndex = 1;
+  showSlides(slideIndex);
+  
+  function plusSlides(n) {
+    showSlides(slideIndex += n);
+  }
+  
+  function currentSlide(n) {
+    showSlides(slideIndex = n);
+  }
+  
+  function showSlides(n) {
+    let i;
+    let slides = document.getElementsByClassName("mySlides");
+    let dots = document.getElementsByClassName("demo");
+    let captionText = document.getElementById("caption");
+    if (n > slides.length) {slideIndex = 1}
+    if (n < 1) {slideIndex = slides.length}
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+    }
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";
+    dots[slideIndex-1].className += " active";
+    captionText.innerHTML = dots[slideIndex-1].alt;
+  }
+</script>
+<script>
+const buttons = document.querySelectorAll('.cart-button');
+
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        const addToCart = button.querySelector('.add-to-cart');
+        const addedToCart = button.querySelector('.added-to-cart');
+        const cart = button.querySelector('.fa-shopping-cart');
+        const bag = button.querySelector('.fa-shopping-bag');
+
+        addToCart.classList.add('add-to-cart-animation')
+        addedToCart.classList.add('added-to-cart-animation')
+
+        cart.style.animation = 'cart 2000ms ease-in-out forwards'
+        bag.style.animation = 'bag 2000ms 700ms ease-in-out forwards'
+    })
+})
+</script>
+</body>
+</html>
