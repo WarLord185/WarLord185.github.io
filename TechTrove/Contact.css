@@ -219,19 +219,28 @@ footer{
 	color: #FFFFFF;
 	margin: 0;
 	padding-left: 25px;
-	padding-top: 10px;
+	padding-bottom: 20px;
 }
 footer a:hover{
 	color: #03DAC6;
 }
 footer a{
-	color: #ffffff;
+	color: #bb86fc;
 }
 .social{
+	height: 36px;
+	width: auto;
 	color: #FFFFFF;
+	overflow: hidden;
+	position: relative;
 }
 .social:hover{
 	animation-name: bounce;
 	color:#03DAC6;
 }
-
+.logofoot{
+	height: 3%;
+	width: 3%;
+	filter: invert();
+	padding-top: 20px;
+}

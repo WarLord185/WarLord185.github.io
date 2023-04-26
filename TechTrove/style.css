@@ -298,6 +298,7 @@ footer a{
 	height: 36px;
 	width: auto;
 	color: #FFFFFF;
+	position: relative;
 }
 .social:hover{
 	animation-name: bounce;
